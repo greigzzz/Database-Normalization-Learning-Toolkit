@@ -22,3 +22,6 @@ Now that the toolkit is open source:
 
 It has been a while now since this was created and at the time I found that little research was done on the topic and little to no solutions were found. Wether Normalization really is still a problem, or ever was is still to be found.  
   
+## Authors
+
+* **Greig Colliar* 
