@@ -1,0 +1,91 @@
+{
+	"employee" : {
+		"question" : {
+			"questionList" : [{"Title" : "How many tables should there be in 1NF?", "Type" : "table"},
+					          {"Title" : "What attributes should be in which table?", "Type" : "attribute"},
+					          {"Title" : "How many tables should there be in 2NF?", "Type" : "table"},
+					          {"Title" : "What attributes should there be in 2NF?", "Type" : "attribute"},
+							  {"Title" : "How many tables should there be in 3NF?", "Type" : "table"},
+							  {"Title" : "What attributes should there be in 3NF?", "Type" : "attribute"}],
+			"UNF" : [{"title" : "Employee_ID"},
+					 {"title" : "Employee_Name"},
+					 {"title" : "Employee_Address"},
+					 {"title" : "Position_ID"},
+					 {"title" : "Salary"},
+					 {"title" : "Project_ID"},
+					 {"title" : "Project_Name"},
+					 {"title" : "Manager"}]
+		},
+		"answer" : {
+			"answerSequence": ["1NF-tablesort", "1NF-attributeplace", "2NF-tablesort", "2NF-attributeplace", "3NF-tablesort", "3NF-attributeplace"],
+			"validation": [	{"val1" : "1NF requires tables"},
+							{"val1" : "1NF requires more tables"},
+							{"val1" : "1NF requires less tables"}
+							],
+			"OneNF" : {
+						"Tables" : [["Employee_ID"],
+								    ["Project_ID"]],
+						"Table-Sort" : {
+							"Correct" : "Well Done",
+							"Incorrect" : "Sorry this is incorrect"
+						},
+						"Attribute-Place" : {
+							"Correct" : "Well Done",
+							"Incorrect" : "Sorry this is incorrect"
+						},
+						"tableValidation" : [{"val1" : "1NF requires tables"},
+											 {"val1" : "1NF requires more tables"},
+											 {"val1" : "1NF requires less tables"}
+											],
+						"attributeValidation" : [{"val1" : "Incorrect. 1NF does not have any repeating groups and data must be split into the two tables. Attributes that rely on the primary key should stay in the same table."}
+												],
+						"extraHint" : [{"val1" : "An employee_ID is needed to know his or hers name with address showing where they stay along with their Position_ID and salary they earn. The manager of a project and the name of the project itself relys on the Project_ID. Remember that a primary key will be copied over to make a connection."}	
+										]
+					},
+			"TwoNF" : {
+					"Tables" : [["Employee_ID", "Employee_Name", "Employee_Address", "Position_ID", "Salary"],
+								["Employee_ID", "Project_ID"],
+								["Project_ID", "Project_Name", "Manager"]],
+						"Table-Sort" : {
+							"Correct" : "Well Done",
+							"Incorrect" : "Sorry this is incorrect"
+						},
+						"Attribute-Place" : {
+							"Correct" : "Well Done",
+							"Incorrect" : "Sorry this is incorrect"
+						},
+						"tableValidation" : [{"val2" : "2NF requires tables"},
+											 {"val2" : "2NF requires more tables"},
+											 {"val2" : "2NF requires less tables"}
+											],
+						"attributeValidation" : [{"val2" : "Incorrect. 2NF requires that you remove any non key attribute that only depend on part of the key to a new table."}
+												],
+						"extraHint" : [{"val2" : "So far an employee can be in many projects as employee_ID is within the project table. However, a project could have many employees. In this case, employee_ID only depends on part of the key and should be placed in a seperate table along with Project_ID."}	
+										]
+					},
+			"ThreeNF" : {
+						"Tables" : [["Employee_ID", "Employee_Name", "Employee_Address", "Position_ID"],
+									["Project_ID", "Employee_ID"],
+								    ["Project_ID", "Project_Name", "Manager"],
+									["Position_ID", "Salary"]],
+						"Table-Sort" : {
+							"Correct" : "Well Done",
+							"Incorrect" : "Sorry this is incorrect"
+						},
+						"Attribute-Place" : {
+							"Correct" : "Well Done",
+							"Incorrect" : "Sorry this is incorrect"
+						},
+						"tableValidation" : [{"val3" : "3NF requires tables"},
+											{"val3" : "3NF requires more tables"},
+											{"val3" : "3NF requires less tables"}
+											],
+						"attributeValidation" : [{"val3" : "Incorrect. The rules of 3NF are to eliminate any non key attributes that are not full dependent on the key and move to a new table."}
+												],
+						"extraHint" : [{"val3" : "The attributes in 2NF should be moved to the same tables in 3NF. Look closely at the employee table and you will notice position id and salary. An employee could have one position with that position having many employees. The salary would also depend on the position that employee is in. What do you do if any non key attributes arent fully dependent on the key? Move to a new table." }
+										]
+					}
+				}
+			}		
+		}
+		

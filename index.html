@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Norm: An online normalisation learning tool</title>
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<h1>Norm: An online normalisation learning tool</h1>
+		<div id="page">
+			<div id="question_area">
+			</div>
+			<div id="control_area">
+				<div class="controls" id="addattribute">Add Attribute</div>
+				<div class="controls" id="delattribute">Delete Attribute</div>
+				<div class="controls" id="addtable">Add Table</div>
+				<div class="controls" id="deltable">Delete Table</div>
+				<div class="controls" id="checkanswer">Check Answer</div>
+			</div>
+			<div id="answer_area">
+				<div id="encapsulate-UNF">
+					<h2>UNF</h2>
+					<div id="UNF">
+					</div>
+				</div>
+								
+				<div id="encapsulate-UNF-1NF">
+					<h2>Drop Area</h2>
+					<div id="Drop-UNF-1NF" class="drop">
+					</div>
+				</div>
+		
+				<div id="encapsulate-1NF" >
+					<h2>1NF</h2>
+				</div>
+								
+				<div id="encapsulate-1NF-2NF">
+					<h2>Drop Area</h2>
+					<div id="Drop-1NF-2NF" class="drop">
+					</div>
+				</div>
+				
+				<div id="encapsulate-2NF">
+					<h2>2NF</h2>
+				</div>
+				
+				<div id="encapsulate-2NF-3NF">
+					<h2>Drop Area</h2>
+					<div id="Drop-2NF-3NF" class="drop">
+					</div>
+				</div>
+				
+				<div id="encapsulate-3NF">
+					<h2>3NF</h2>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!-- 1NF messages -->
+		
+			<div id="validation_1NF_1" class="dialog-message" title="1NF Tables Required">
+					<!--<span class="ui-icon ui-icon-circle-check" style="float: left; margin: 0 7px 50px 0;"></span>-->
+			</div>
+			
+			<div id="validation_1NF_2" class="dialog-message" title="1NF Tables Required">
+			</div>
+			
+			<div id="validation_1NF_3" class="dialog-message" title="1NF Tables Required">
+			</div>
+			
+			<div id="validation_1NF_4" class="dialog-message" title="Attributes Wrong">
+			</div>
+			
+			<div id="validation_1NF_5" class="dialog-message" title="1NF Extra Hint">
+			</div>
+			
+			<div id="Answer_Table_1NF" class="dialog-message" title="1NF Video for Tables Required"> 
+			</div>
+			
+			<div id="Answer_Attribute_1NF" class="dialog-message" title="1NF Video for Attributes Required">
+			</div>
+			
+			<!-- 2NF messages -->
+			
+			
+			
+			<div id="validation_2NF_1" class="dialog-message" title="2NF Tables Required">
+			</div>
+			
+			<div id="validation_2NF_2" class="dialog-message" title="2NF Tables Required">
+			</div>
+			
+			<div id="validation_2NF_3" class="dialog-message" title="2NF Tables Required">
+			</div>
+			
+			<div id="validation_2NF_4" class="dialog-message" title="Attributes Wrong">
+			</div>
+			
+			<div id="validation_2NF_5" class="dialog-message" title="2NF Extra Hint">
+			</div>
+			
+			<div id="Answer_Table_2NF" class="dialog-message" title="2NF Video for Tables Required">
+			</div>
+			
+			<div id="Answer_Attribute_2NF" class="dialog-message" title="2NF Video for Attributes Required">
+			</div>
+			
+			<!-- 3NF messages -->
+			
+			<div id="validation_3NF_1" class="dialog-message" title="3NF Tables Required">
+			</div>
+			
+			<div id="validation_3NF_2" class="dialog-message" title="3NF Tables Required">
+			</div>
+			
+			<div id="validation_3NF_3" class="dialog-message" title="3NF Tables Required">
+			</div>
+			
+			<div id="validation_3NF_4" class="dialog-message" title="Attributes Wrong">
+			</div>
+			
+			<div id="validation_3NF_5" class="dialog-message" title="3NF Extra Hint">
+			</div>
+			
+			<div id="Answer_Table_3NF" class="dialog-message" title="3NF Tables Required">
+			</div>
+			
+			<div id="Answer_Attribute_3NF" class="dialog-message" title="3NF Attributes Required">
+			</div>
+			
+			
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+		
+		<script src="js/question.js"></script>
+		<script src="js/getdata.js"></script>
+		<script>
+		$('#validation_1NF_1').hide();
+		$('#validation_1NF_2').hide();
+		$('#validation_1NF_3').hide();
+		$('#validation_1NF_4').hide();
+		$('#validation_1NF_5').hide();
+		$('#validation_2NF_1').hide();
+		$('#validation_2NF_2').hide();
+		$('#validation_2NF_3').hide();
+		$('#validation_2NF_4').hide();
+		$('#validation_2NF_5').hide();
+		$('#validation_3NF_1').hide();
+		$('#validation_3NF_2').hide();
+		$('#validation_3NF_3').hide();
+		$('#validation_3NF_4').hide();
+		$('#validation_3NF_5').hide();
+		
+		$('#Answer_Table_1NF').hide();
+		$('#Answer_Attribute_1NF').hide();
+		$('#Answer_Table_2NF').hide();
+		$('#Answer_Attribute_2NF').hide();
+		$('#Answer_Table_3NF').hide();
+		$('#Answer_Attribute_3NF').hide();
+		
+		$('#dialog-message').hide();
+		getdata();
+		getvideo1();
+		getvideo2();
+		getvideo3();
+		getvideo4();
+		getvideo5();
+		getvideo6();
+		</script>
+	</body>
+</html>

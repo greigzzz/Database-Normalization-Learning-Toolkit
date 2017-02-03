@@ -1,0 +1,240 @@
+
+.controls {
+	position: relative;
+	float: left;
+	width: 10%;
+	height: 80%;
+	background-color: #00CC66; 
+	margin-left: 2%;
+	top: 3%;
+		border:2px solid;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Old Firefox */
+	padding: 3px;
+}
+
+#page {
+	min-height: 1000px;
+	height: auto px;
+	width: 100%;
+	left: 5%;
+	top: 5%;
+	margin-left: 1%;
+	margin-top: 1%;
+	border-style: none;
+
+}
+
+#question_area {
+	position: left;
+	float: left;
+	width: 95%;
+	margin-left: 1%;
+	margin-top: 1%;
+	height: 50px;
+	
+	border:2px solid;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Old Firefox */
+	padding: 3px;
+}
+
+#question_area h2 {
+	padding-left: 2%;
+}
+
+#control_area {
+	position: left;
+	float: left;
+	width: 95%;
+	height: 60px;
+	margin-left: 1%;
+	margin-top: 1%;
+	
+	border:2px solid;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Old Firefox */
+	padding: 3px;
+}
+
+#answer_area {
+	position: left;
+	float: left;
+	width: 95%;
+	min-height: 600px;
+	height: auto;
+	margin-left: 1%;
+	margin-top: 1%;
+	
+	border:2px solid;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Old Firefox */
+	padding: 3px;
+}
+
+#encapsulate-UNF {
+	position: relative;
+	float: left;
+	width: 12%;
+	height: 90%;
+	margin-left: 1%;
+	margin-top: 1%;
+	border-style: none;
+}
+
+#encapsulate-UNF-1NF {
+	position: relative;
+	float: left;
+	width: 12%;
+	height: 90%;
+	margin-left: 1%;
+	margin-top: 1%;
+	border-style: none;
+	display : none;
+}
+
+#encapsulate-1NF {
+	position: relative;
+	float: left;
+	width: 12%;
+	height: 100%;
+	margin-left: 1%;
+	margin-top: 1%;
+	border-style: none;
+}
+
+#encapsulate-1NF-2NF {
+	position: relative;
+	float: left;
+	width: 12%;
+	height: 90%;
+	margin-left: 1%;
+	margin-top: 1%;
+	border-style: none;
+	display : none;
+}
+
+#encapsulate-2NF {
+	position: relative;
+	float: left;
+	width: 12%;
+	height: 90%;
+	margin-left: 1%;
+	margin-top: 1%;
+	border-style: none;
+	display : none;
+}
+
+#encapsulate-2NF-3NF {
+	position: relative;
+	float: left;
+	width: 12%;
+	height: 90%;
+	margin-left: 1%;
+	margin-top: 1%;
+	border-style: none;
+	display : none;
+}
+
+#encapsulate-3NF {
+	position: relative;
+	float: left;
+	width: 12%;
+	height: 90%;
+	margin-left: 1%;
+	margin-top: 1%;
+	border-style: none;
+	display : none;
+}
+
+#UNF {
+	position: relative;
+	float: left;
+	width: 95%;
+	height: 400px;
+	margin-left: 1%;
+	margin-top: 1%;
+	
+	border:2px solid;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Old Firefox */
+	padding: 3px;
+}
+
+.drop {
+	position: relative;
+	float: left;
+	width: 95%;
+	height: 600px;
+	margin-left: 1%;
+	margin-top: 1%;
+	
+	border:2px solid;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Old Firefox */
+	padding: 3px;
+}
+
+#1NF {
+	position: relative;
+	float: left;
+	width: 95%;
+	height: 95%;
+	margin-left: 1%;
+	margin-top: 1%;
+	
+	border:2px solid;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Old Firefox */
+	padding: 3px;
+}
+
+#2NF {
+	position: relative;
+	float: left;
+	width: 95%;
+	height: 95%;
+	margin-left: 1%;
+	margin-top: 1%;
+	
+	border:2px solid;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Old Firefox */
+	padding: 3px;
+}
+
+#3NF {
+	position: relative;
+	float: left;
+	width: 95%;
+	height: 95%;
+	margin-left: 1%;
+	margin-top: 1%;
+	
+	border:2px solid;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Old Firefox */
+	padding: 3px;
+}
+
+.attributes {
+	position: left;
+	float: left;
+	width: 90%;
+	height: 8%;
+	margin-left: 3%;
+	margin-top: 2%;
+	
+	border:2px solid;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Old Firefox */
+	padding: 3px;
+}
+
+h1 {
+
+}
+
+h2 {
+	height: 15px;
+}

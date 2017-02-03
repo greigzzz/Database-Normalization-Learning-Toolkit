@@ -1,0 +1,1 @@
+In here you should only require a config file for the DB
